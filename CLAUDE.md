@@ -6,6 +6,36 @@
 
 ---
 
+## 🔴 ABSOLUTNÍ ZÁKAZ — NIKDY NESAHEJ DO CIZÍHO REPO
+
+**Tvůj repo je POUZE: `/root/dev/s60-akademie`**
+**Spravuješ také: Moodle na VPS 88.86.124.15 (SSH přístup OK)**
+
+```
+❌ ZAKÁZÁNO — i kdyby si myslel že pomáháš:
+  Měnit cokoliv v s60-auth/
+  Měnit cokoliv v s60-badwolf/
+  Měnit cokoliv v s60-venom/
+  Měnit cokoliv v s60-infra/
+  Měnit cokoliv kdekoliv jinde
+
+✅ POVOLENO:
+  Číst cizí repo (pro pochopení kontextu)
+  Moodle admin na VPS (je to tvůj systém)
+  Poslat zprávu jinému agentovi s požadavkem
+```
+
+**Potřebuješ změnu v jiném repo?**
+```bash
+/root/dev/agent-messages/redis-queue.sh send badwolf TODO "Potřebuji X v CoursesModule" "Popis..."
+/root/dev/agent-messages/redis-queue.sh send auth TODO "Potřebuji X v S60Auth" "Popis..."
+# → Počkej na odpověď. NIKDY to nedělej sám.
+```
+
+**Toto pravidlo bylo opakovaně porušeno. Je to LAW — ne doporučení.**
+
+---
+
 ## 🚨 MANDATORY: CHECK MESSAGES FIRST!
 
 **BEFORE EVERY RESPONSE - NO EXCEPTIONS:**
