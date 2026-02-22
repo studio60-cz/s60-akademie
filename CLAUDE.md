@@ -27,8 +27,8 @@
 
 **Potřebuješ změnu v jiném repo?**
 ```bash
-/root/dev/agent-messages/redis-queue.sh send badwolf TODO "Potřebuji X v CoursesModule" "Popis..."
-/root/dev/agent-messages/redis-queue.sh send auth TODO "Potřebuji X v S60Auth" "Popis..."
+/root/dev/agent-messages/redis-queue.sh send badwolf TODO "Potřebuji X v CoursesModule" "Popis..." akademie
+/root/dev/agent-messages/redis-queue.sh send auth TODO "Potřebuji X v S60Auth" "Popis..." akademie
 # → Počkej na odpověď. NIKDY to nedělej sám.
 ```
 
@@ -55,8 +55,8 @@ Bash: /root/dev/agent-messages/check-my-messages.sh akademie
 
 **Posílání zpráv:**
 ```bash
-/root/dev/agent-messages/redis-queue.sh send main INFO "Moodle REST token ready" "..."
-/root/dev/agent-messages/redis-queue.sh send badwolf TODO "Update CoursesModule config" "..."
+/root/dev/agent-messages/redis-queue.sh send main INFO "Moodle REST token ready" "..." akademie
+/root/dev/agent-messages/redis-queue.sh send badwolf TODO "Update CoursesModule config" "..." akademie
 ```
 
 ---
@@ -286,7 +286,8 @@ Test: přihlás se přes SSO na akademie.s60dev.cz"
 /root/dev/agent-messages/redis-queue.sh send main \
   SERVER_START_REQUEST \
   "BadWolf restart needed" \
-  "Přidán MOODLE_TOKEN do .env, potřebuji restart CoursesModule"
+  "Přidán MOODLE_TOKEN do .env, potřebuji restart CoursesModule" \
+  akademie
 ```
 
 **Moodle restart (pokud potřebuješ):**
